@@ -27,6 +27,7 @@
     border-radius: 50%;
     border-block: var(--s) solid #0000;
     margin-block: calc(-1*var(--s));
+    margin: auto;
     translate: 0 var(--t);
     translate: --h .6s,--t .6s;
     cursor: pointer;
@@ -47,4 +48,25 @@ img:hover {
 }
 img:has(+ img:hover) {
     --h: calc(.7*var(--s));
+}
+.card-body {
+   margin: auto;
+   width: 50%;
+   
+   padding: 15rem;
+}
+body {
+    background-color: rgb(3, 3, 8);
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(50, 13, 119, 0.959)
+    );
+}
+.hide {
+    display: none;
+}
+.myDIV:hover + .hide {
+    display: block;
+    color: red;
 }
