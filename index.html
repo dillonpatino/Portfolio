@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Portfolio Website-Brad</title>
+  <title>Portfolio Website-Dillon</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- bootstrap CDN -->
@@ -34,10 +34,10 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#resume">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -66,19 +66,20 @@
         
         <div class="row mt-4">
             <div class="col-lg-6">
-                <img src="bio pic.JPG" class="image_about" alt="">
+                <img src="images/bio pic.JPG" class="image_about" alt="">
             </div>
 
             <div class="col-lg-6">
                 <p> I am a U.S. Marine Corps Veteran and I was pursing medicine upon discharging. I graduated with a bachelor's of science in Microbiology from Weber State University in 2021. After working for a couple of years at Mckay-Dee Hospital in Ogden, Utah, I realized that I was unsatisfied and was pursing the wrong field. I then took a couple a courses and did some research in computer science and obtained the Google Cybersecurity Certificate and realized that I had a passion for tech.
-                    
+                <br>
+                <p> Hobbies:</p>  
                 </p>
                 <div class="row mt-3">
                     <div class="col-md-6">
                         <ul>
-                            <li>Windsurfing</li>
-                            <li>Mountain-climbing</li>
-                            <li>Brain-surgery</li>
+                            <li>Hiking</li>
+                            <li>Weight-lifting</li>
+                            <li>Photography</li>
 
                         </ul>
                     </div>
@@ -100,30 +101,35 @@
         </div>
     </section>
     
-    <!-- services section-->
+    <!-- resume section-->
     <!-- https://getbootstrap.com/docs/5.2/components/card/#about -->
-    <section class="container section" id="services">
-        <h1 class="text-center">Services</h1>
+    <section class="container section" id="resume">
+        <h1 class="text-center">Resume</h1>
         <div class="row">
             <div class="col-lg-4 mt-4">
                 <div class="card servicesText">
-                    <div class="card-body">
-                        <i class="fas servicesIcon fa-clock"></i>
-                        <h4 class="card-title mt-3">Website Development</h4>
-                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                <div class="card-body">
+                        <i class="fas servicesIcon fa-school"></i>
+                        <h4 class="card-title mt-3">Education</h4>
+                        <p class="card-text mt-3"> Click this link to view all of my education.
                         </p>
+                        <div class="text-center">
+                            <a href="education.html" class="btn btn-success">Link</a>
+                        </div>
                     </div>
                 </div>  
+            
             </div>
             <div class="col-lg-4 mt-4">
                 <div class="card servicesText">
                     <div class="card-body">
-                        <i class='fas servicesIcon fa-layer-group'></i>
-                        <h4 class="card-title mt-3">Website Design</h4>
-                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        <i class='fas servicesIcon fa-user-tie'></i>
+                        <h4 class="card-title mt-3">Employment History</h4>
+                        <p class="card-text mt-3">Click this link to view my employment history.
                         </p>
+                        <div class="text-center">
+                            <a href="employment.html" class="btn btn-success">Link</a>
+                        </div>
                     </div>
                 </div>  
             </div>
@@ -180,10 +186,10 @@
         </div>
     </section>
 
-    <!-- portfolio section-->
-    <section class="section" id="portfolio">
+    <!-- projects section-->
+    <section class="section" id="projects">
         <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
+            <h1 class="text-center">Projects</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card">
@@ -213,7 +219,7 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card">
-                        <img class="card-img-top" src="marketing.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="images/marketing.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Marketing Webpage</h4>
                             <p class="card-text">The first major project I ever worked on, was creating a homepage with working links for a fictional marketing website.</p>
@@ -277,7 +283,7 @@
                 <!-- to edit google map go to https://www.embed-map.com type your location, generate html code and copy the html  -->
                 <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
                     <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
-                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=sydney+NSW&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Layton,+UT,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
                         </iframe>
                     </div>
                     <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
