@@ -1,0 +1,50 @@
+@property --h {
+    syntax: "<length-percentage>";
+    initial-value: 0%;
+    inherits: true;
+}
+@property --t {
+    syntax: "<length-percentage>";
+    initial-value: 0%;
+    inherits: true;
+}
+.container {
+    --s: 150px;
+    --o: 30px;
+    --g: 12px;
+
+    display: flex;
+    gap: var(--g);
+    padding: 3px;
+    clip-path: inset(0);
+    transition: 0s .6s;
+    filter: drop-shadow(0 0 1px #000) drop-shadow(0 0 1px #000)
+    drop-shadow(0 0 #000) drop-shadow(0 0 #000);
+}
+.container img {
+    height: var(--s);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-block: var(--s) solid #0000;
+    margin-block: calc(-1*var(--s));
+    translate: 0 var(--t);
+    translate: --h .6s,--t .6s;
+    cursor: pointer;
+}
+.container img:not(:last-child) {
+    margin-right: calc(-1*var(--o));
+    -webkit-mask: radial-gradient(50% 50% at calc(150% + var(--g) - var(--o)) calc(50% - var(--h)),
+    #0000 calc(100% + var(--g)), #000 calc(101% + var(--g)))
+    padding-box;
+}
+.container:hover {
+    clip-path: inset(-999px 0 0);
+    transition: 0s;
+}
+img:hover {
+    --h: calc(-.7*var(--s));
+    --t: calc(-.7*var(--s));
+}
+img:has(+ img:hover) {
+    --h: calc(.7*var(--s));
+}
